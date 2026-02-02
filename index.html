@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="InfoTess is a student society dedicated to fostering a community of tech enthusiasts."> <!--change-->
+        <title>InfoTess Website</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!--favicon-->
+        <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/48/internet.png"> <!--change-->
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="assets/images/logo.webp" alt="InfoTess Logo" class="logo-image"> <!--change-->
+                <div class="logo-text">INFOTESS</div>
+            </div>
+            <button
+                class="hamburger"
+                aria-label="Toggle menu"
+                aria-expanded="false"
+                onclick="toggleMenu(this)">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <nav id="navbar">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link"><i class="fas fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-info-circle" aria-hidden="true"></i>&nbsp;About</a></li>
+                    <!-- <i class="fas fa-credit-card"></i> -->
+                    <li><a href="#" class="nav-link"><i class="fas fa-file-invoice-dollar" aria-hidden="true"></i>&nbsp;Pay Dues</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-images" aria-hidden="true"></i>&nbsp;Gallery</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-graduation-cap" aria-hidden="true"></i>&nbsp;Academics</a></li>
+                </ul>
+            </nav>
+            <div class="overlay" onclick="closeMenu()"></div>
+        </header>
+
+        <section class="hero-section">
+            <marquee behavior="right" direction="" class="welcome-message">WELCOME TO INFOTESS SOCIETY</marquee>
+            <h1>Passion, Innovation, Excellence</h1>
+            <p>
+                Empowering Excellence Through Innovation and Collaboration
+                Empowering Excellence Through Innovation and Collaboration
+                Empowering Excellence Through Innovation and Collaboration
+            </p>
+            <div class="cta-container">
+                <a href="#" class="cta-button"><i class="fab fa-youtube" aria-hidden="true"></i>How To Pay Dues</a>
+                <a href="#" class="cta-button"><i class="fas fa-file-invoice-dollar" aria-hidden="true"></i>Pay Dues Now</a>
+            </div>
+        </section>
+
+        <div class="info-container">
+            <div class="info-box">
+                <h2>About INFOTESS</h2>
+                <p>
+                    InfoTess is a student society dedicated to fostering a community of tech enthusiasts. We organize events, workshops, and projects to help members enhance their skills and network with industry professionals.
+                </p>
+            </div>
+            <div class="info-image">
+                <img src="assets/images/about-us.webp" alt="About Us Image">
+            </div>          
+        </div>
+
+        <article class="tutorial-article">
+            <h2><i class="fas fa-video" aria-hidden="true"></i>How to pay dues</h2>
+            <p>
+                Become a part of InfoTess and take your tech journey to the next level. Whether you're a beginner or an experienced coder, there's a place for you here. Join us for exciting events, collaborative projects, and endless learning opportunities.
+            </p>
+            <iframe 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="How to pay your InfoTess dues tutorial video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen
+                class="tutorial-video">
+            </iframe>
+            <a href="#" class="cta-button tutorial-btn"><i class="fas fa-file-invoice-dollar" aria-hidden="true"></i>Pay Dues Now</a>
+        </article>
+
+        <section class="announcement-section">
+            <h2><i class="fas fa-bullhorn fa-flip-horizontal" aria-hidden="true"></i>Latest Announcements</h2>
+            <div class="announcement-container">
+                <div class="announcement-child">
+                    <img src="assets/images/about-us.webp" alt="latest announcment">
+                    <h3>Upcoming Workshop: Introduction to Python</h3>
+                    <p>Join us on March 15th for a beginner-friendly workshop on Python programming. Learn the basics and start coding!</p>
+                </div>
+                <div class="announcement-child">
+                    <img src="assets/images/about-us.webp" alt="latest announcment">
+                    <h3>Upcoming Workshop: Introduction to Python</h3>
+                    <p>Join us on March 15th for a beginner-friendly workshop on Python programming. Learn the basics and start coding!</p>
+                </div>
+                <div class="announcement-child">
+                    <img src="assets/images/about-us.webp" alt="latest announcment">
+                    <h3>Upcoming Workshop: Introduction to Python</h3>
+                    <p>Join us on March 15th for a beginner-friendly workshop on Python programming. Learn the basics and start coding!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2><i class="fas fa-images" aria-hidden="true"></i>Gallery</h2>
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&lt;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="assets/images/gallery1.webp" alt="Gallery Image 1">
+                    </li>
+                    <li class="slide">
+                        <img src="assets/images/gallery2.webp" alt="Gallery Image 2">
+                    </li>
+                    <li class="slide">
+                        <img src="assets/images/gallery3.jpg" alt="Gallery Image 3">
+                    </li>
+                    <li class="slide">
+                        <img src="assets/images/gallery4.webp" alt="Gallery Image 4">
+                    </li>
+                    <li class="slide">
+                        <img src="assets/images/gallery5.jpg" alt="Gallery Image 5">
+                    </li>
+                </ul>
+                <button class="carousel-button next" data-carousel-button="next">&gt;</button>
+            </div>
+            <a href="#" class="gallery-link">view more</a>
+        </section>
+
+        <footer>
+            <h2>Connect With Us</h2>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.webp" alt="INFOTESS logo">
+                    <div class="footer-logo-text">INFOTESS</div>
+                </div>
+                <!-- <hr> -->
+                <ul>
+                    <li><a href="" class="social-link"><i class="fab fa-facebook" aria-hidden="true"></i>&nbsp;facebook</a></li>
+                    <li><a href="" class="social-link"><i class="fab fa-twitter" aria-hidden="true"></i>&nbsp;twitter</a></li>
+                    <li><a href="" class="social-link"><i class="fab fa-instagram" aria-hidden="true"></i>&nbsp;instagram</a></li>
+                    <li><a href="" class="social-link"><i class="fab fa-linkedin" aria-hidden="true"></i>&nbsp;linkedin</a></li>
+                    <li><a href="" class="social-link"><i class="fab fa-youtube" aria-hidden="true"></i>&nbsp;youtube</a></li>
+                </ul>
+                <!-- <hr> -->
+                <address>
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:info@infotess.com">info@infotess.com</a></p>
+                    <p>Phone: <a href="tel:1234567890">(123) 456-7890</a></p>
+                    <p>Address:<br>123 Tech Lane,<br>Innovation City,<br>Country</p>
+                </address>
+            </div>
+            <div class="divider"></div>
+            <p class="copyright">&copy; 2024 InfoTess Society. All rights reserved.</p>
+            <p>Made with ❤️ by the Hackathon Committee</p>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
 
