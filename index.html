@@ -15,6 +15,7 @@
         <!--favicon-->
         <link rel="icon" type="image/png" href="assets/images/infotess-logo.jpg"> 
     </head>
+    
     <body>
         <!-- header here -->
         <header>
@@ -46,15 +47,18 @@
             <div class="overlay" onclick="closeMenu()"></div>
         </header>
 
-        <!-- marque here -->
-        <marquee behavior="right" direction="" class="welcome-message">WELCOME TO INFOTESS SOCIETY</marquee>
+        <div class="welcome-message-container">
+            <p class="welcome-message">WELCOME TO INFOTESS SOCIETY</p>
+        </div>
+
         <section class="hero-section">
             <div class="bg-image"></div>
-            <h1>Passion, Innovation, Excellence</h1>
+            <h1>TECHNOLOGY TOOL FOR DEVELOPMENT</h1>
             <p>
-                Empowering Excellence Through Innovation and Collaboration
-                Empowering Excellence Through Innovation and Collaboration
-                Empowering Excellence Through Innovation and Collaboration
+                Innovation, technical excellence, ethical responsibility, and leadership among students. 
+                We envision a vibrant community where members collaborate, develop practical skills, 
+                embrace emerging technologies, and contribute meaningful solutions to societal challenges.
+                Our goal is to produce competent, creative IT professionals prepared to shape the digital future.
             </p>
             <div class="cta-container">
                 <a href="#" class="cta-button"><i class="fab fa-youtube" aria-hidden="true"></i>How To Pay Dues</a>
@@ -66,11 +70,16 @@
             <div class="info-box">
                 <h2>About INFOTESS</h2>
                 <p>
-                    InfoTess is a student society dedicated to fostering a community of tech enthusiasts. We organize events, workshops, and projects to help members enhance their skills and network with industry professionals.
+                    The Information Technology Student Society is committed to promoting academic excellence 
+                    and practical competence among its members through workshops, seminars, mentorship, and 
+                    collaborative projects. We aim to bridge the gap between theory and industry by exposing 
+                    students to emerging technologies and real-world challenges. The society fosters leadership, 
+                    teamwork, innovation, and ethical responsibility while creating networking opportunities that 
+                    prepare members for successful and impactful careers in Information Technology.
                 </p>
             </div>
             <div class="info-image">
-                <img src="assets/images/about-us.webp" alt="About Us Image">
+                <img src="assets/images/hero.jpg" alt="About Us Image">
             </div>          
         </div>
 
@@ -94,19 +103,31 @@
             <h2><i class="fas fa-bullhorn fa-flip-horizontal" aria-hidden="true"></i>Latest Announcements</h2>
             <div class="announcement-container">
                 <div class="announcement-child">
-                    <img src="assets/images/about-us.webp" alt="latest announcment">
-                    <h3>Upcoming Workshop: Introduction to Python</h3>
-                    <p>Join us on March 15th for a beginner-friendly workshop on Python programming. Learn the basics and start coding!</p>
+                    <img src="assets/images/announce.jpg" alt="latest announcment">
+                    <h3>Career Guidance & Website Launching Seminar</h3>
+                    <p>
+                        Ready to shape your future and explore new digital opportunities? 
+                        Join us for an insightful seminar focused on career direction and the 
+                        offical launch of our INFOTESS website.
+                    </p>
                 </div>
                 <div class="announcement-child">
-                    <img src="assets/images/about-us.webp" alt="latest announcment">
-                    <h3>Upcoming Workshop: Introduction to Python</h3>
-                    <p>Join us on March 15th for a beginner-friendly workshop on Python programming. Learn the basics and start coding!</p>
+                    <img src="assets/images/announce.jpg" alt="latest announcment">
+                    <h3>Career Guidance & Website Launching Seminar</h3>
+                    <p>
+                        Ready to shape your future and explore new digital opportunities? 
+                        Join us for an insightful seminar focused on career direction and the 
+                        offical launch of our INFOTESS website.
+                    </p>
                 </div>
                 <div class="announcement-child">
-                    <img src="assets/images/about-us.webp" alt="latest announcment">
-                    <h3>Upcoming Workshop: Introduction to Python</h3>
-                    <p>Join us on March 15th for a beginner-friendly workshop on Python programming. Learn the basics and start coding!</p>
+                    <img src="assets/images/announce.jpg" alt="latest announcment">
+                    <h3>Career Guidance & Website Launching Seminar</h3>
+                    <p>
+                        Ready to shape your future and explore new digital opportunities? 
+                        Join us for an insightful seminar focused on career direction and the 
+                        offical launch of our INFOTESS website.
+                    </p>
                 </div>
             </div>
         </section>
@@ -114,7 +135,7 @@
         <section class="gallery-section">
             <h2><i class="fas fa-images" aria-hidden="true"></i>Gallery</h2>
             <div class="carousel" data-carousel>
-                <button class="carousel-button prev" data-carousel-button="prev">&lt;</button>
+                <button class="carousel-button prev" aria-label="Previous slide" data-carousel-button="prev">&lt;</button>
                 <ul data-slides>
                     <li class="slide" data-active>
                         <img src="assets/images/gallery1.webp" alt="Gallery Image 1">
@@ -132,7 +153,8 @@
                         <img src="assets/images/gallery5.jpg" alt="Gallery Image 5">
                     </li>
                 </ul>
-                <button class="carousel-button next" data-carousel-button="next">&gt;</button>
+                <button class="carousel-button next" aria-label="Next slide" data-carousel-button="next">&gt;</button>
+                <div class="carousel-dots" aria-label="Slide indicators"></div>
             </div>
             <a href="#" class="gallery-link">view more</a>
         </section>
@@ -146,9 +168,7 @@
                         <div class="footer-logo-text">INFOTESS-UTAS</div>
                     </div>
                     <div class="small-text">
-                        <p>Stay connected</p>
-                        <p>Stay informed</p>
-                        <p>Stay updated</p>
+                        <p>Technology Tool for Development</p>
                     </div>
                 </div>
                 <!-- <hr> -->
